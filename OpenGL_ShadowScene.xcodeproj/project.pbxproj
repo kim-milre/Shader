@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		49DA4ED12E8E2F8D00FFFC30 /* libGLEW.2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E78A152E8BDED40042DAF0 /* libGLEW.2.2.dylib */; };
+		49DA4ED22E8E2F8D00FFFC30 /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E78A122E8BDCA80042DAF0 /* libglfw.3.4.dylib */; };
+		49DA4ED32E8E2F8D00FFFC30 /* libglm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E78A172E8BDED50042DAF0 /* libglm.dylib */; };
+		49E78A0B2E8BDA500042DAF0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49E78A0A2E8BDA500042DAF0 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		49E789CC2E8BD9C10042DAF0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +27,13 @@
 
 /* Begin PBXFileReference section */
 		49E789CE2E8BD9C10042DAF0 /* OpenGL_ShadowScene */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_ShadowScene; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E78A0A2E8BDA500042DAF0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		49E78A0C2E8BDA850042DAF0 /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../opt/homebrew/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+		49E78A0E2E8BDA910042DAF0 /* libglm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglm.dylib; path = ../../../../opt/homebrew/Cellar/glm/1.0.1/lib/libglm.dylib; sourceTree = "<group>"; };
+		49E78A102E8BDC5B0042DAF0 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = ../../../../opt/homebrew/Cellar/glfw/3.4/lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		49E78A122E8BDCA80042DAF0 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = lib/libglfw.3.4.dylib; sourceTree = "<group>"; };
+		49E78A152E8BDED40042DAF0 /* libGLEW.2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.dylib; path = lib/libGLEW.2.2.dylib; sourceTree = "<group>"; };
+		49E78A172E8BDED50042DAF0 /* libglm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglm.dylib; path = lib/libglm.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E78A0B2E8BDA500042DAF0 /* OpenGL.framework in Frameworks */,
+				49DA4ED12E8E2F8D00FFFC30 /* libGLEW.2.2.dylib in Frameworks */,
+				49DA4ED22E8E2F8D00FFFC30 /* libglfw.3.4.dylib in Frameworks */,
+				49DA4ED32E8E2F8D00FFFC30 /* libglm.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				49E789D02E8BD9C10042DAF0 /* OpenGL_ShadowScene */,
+				49E78A092E8BDA500042DAF0 /* Frameworks */,
 				49E789CF2E8BD9C10042DAF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +74,20 @@
 				49E789CE2E8BD9C10042DAF0 /* OpenGL_ShadowScene */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		49E78A092E8BDA500042DAF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49E78A172E8BDED50042DAF0 /* libglm.dylib */,
+				49E78A152E8BDED40042DAF0 /* libGLEW.2.2.dylib */,
+				49E78A102E8BDC5B0042DAF0 /* libglfw.3.4.dylib */,
+				49E78A122E8BDCA80042DAF0 /* libglfw.3.4.dylib */,
+				49E78A0E2E8BDA910042DAF0 /* libglm.dylib */,
+				49E78A0C2E8BDA850042DAF0 /* libGLEW.2.2.0.dylib */,
+				49E78A0A2E8BDA500042DAF0 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +279,18 @@
 		49E789D62E8BD9C10042DAF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenGL_ShadowScene/OpenGL_ShadowScene.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HPZYU2DRYF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/opt/glm/include,
+					/opt/homebrew/opt/glew/include,
+					/opt/homebrew/opt/glfw/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../lib";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -256,9 +298,18 @@
 		49E789D72E8BD9C10042DAF0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OpenGL_ShadowScene/OpenGL_ShadowScene.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HPZYU2DRYF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/opt/glm/include,
+					/opt/homebrew/opt/glew/include,
+					/opt/homebrew/opt/glfw/include,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../lib";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
